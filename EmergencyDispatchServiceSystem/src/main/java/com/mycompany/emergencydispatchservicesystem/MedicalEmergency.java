@@ -12,9 +12,15 @@ public class MedicalEmergency extends EmergencyReport {
     }
 
     @Override
+    public String getAssignedService() {
+        return "Ambulance";
+    }
+
+    @Override
     public void displayReport() {
         System.out.println("=== MEDICAL EMERGENCY ===");
         super.displayReport();
     }
 }
+
 

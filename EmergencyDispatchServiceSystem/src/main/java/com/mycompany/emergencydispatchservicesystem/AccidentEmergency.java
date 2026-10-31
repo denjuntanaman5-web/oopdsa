@@ -1,4 +1,5 @@
 
+
 package com.mycompany.emergencydispatchservicesystem;
 
 public class AccidentEmergency extends EmergencyReport {
@@ -12,9 +13,15 @@ public class AccidentEmergency extends EmergencyReport {
     }
 
     @Override
+    public String getAssignedService() {
+        return "Police";
+    }
+
+    @Override
     public void displayReport() {
         System.out.println("=== ACCIDENT EMERGENCY ===");
         super.displayReport();
     }
 }
+
 

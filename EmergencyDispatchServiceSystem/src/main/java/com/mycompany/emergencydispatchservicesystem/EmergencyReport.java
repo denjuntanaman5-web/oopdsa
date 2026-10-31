@@ -1,7 +1,6 @@
 
 package com.mycompany.emergencydispatchservicesystem;
 
-
 public class EmergencyReport {
 
     private String incidentId;
@@ -57,6 +56,10 @@ public class EmergencyReport {
         this.status = status;
     }
 
+    public String getAssignedService() {
+        return "General Emergency Services";
+    }
+
     public void displayReport() {
         System.out.println("Incident ID: " + incidentId);
         System.out.println("Caller Name: " + callerName);
@@ -65,7 +68,9 @@ public class EmergencyReport {
         System.out.println("Emergency Type: " + emergencyType);
         System.out.println("Description: " + description);
         System.out.println("Status: " + status);
+        System.out.println("Assigned Service: " + getAssignedService());
     }
 }
+
 
 

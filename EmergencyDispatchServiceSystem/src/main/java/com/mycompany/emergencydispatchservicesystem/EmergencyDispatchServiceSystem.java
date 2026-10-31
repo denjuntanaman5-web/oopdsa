@@ -1,4 +1,5 @@
     
+
 package com.mycompany.emergencydispatchservicesystem;
 
 public class EmergencyDispatchServiceSystem {
@@ -30,9 +31,12 @@ public class EmergencyDispatchServiceSystem {
         );
 
         fire.displayReport();
+        System.out.println();
+
         medical.displayReport();
+        System.out.println();
+
         accident.displayReport();
     }
 }
-
 
