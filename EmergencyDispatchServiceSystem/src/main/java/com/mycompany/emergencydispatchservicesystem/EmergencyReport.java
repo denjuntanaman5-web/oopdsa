@@ -53,7 +53,15 @@ public class EmergencyReport {
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        if (status.equals("Pending")
+                || status.equals("Dispatched")
+                || status.equals("Responding")
+                || status.equals("Resolved")) {
+
+            this.status = status;
+        } else {
+            System.out.println("Invalid emergency status!");
+        }
     }
 
     public String getAssignedService() {
@@ -71,6 +79,7 @@ public class EmergencyReport {
         System.out.println("Assigned Service: " + getAssignedService());
     }
 }
+
 
 
 

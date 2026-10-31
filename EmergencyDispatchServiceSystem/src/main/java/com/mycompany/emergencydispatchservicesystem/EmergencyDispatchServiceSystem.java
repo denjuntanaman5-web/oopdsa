@@ -30,6 +30,12 @@ public class EmergencyDispatchServiceSystem {
                 "Road accident"
         );
 
+        // Update emergency statuses
+        fire.setStatus("Dispatched");
+        medical.setStatus("Responding");
+        accident.setStatus("Resolved");
+
+        // Display all reports
         fire.displayReport();
         System.out.println();
 
@@ -39,4 +45,5 @@ public class EmergencyDispatchServiceSystem {
         accident.displayReport();
     }
 }
+
 
