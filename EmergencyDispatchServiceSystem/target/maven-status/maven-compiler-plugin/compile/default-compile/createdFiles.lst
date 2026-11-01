@@ -1,0 +1,5 @@
+com\mycompany\emergencydispatchservicesystem\FireEmergency.class
+com\mycompany\emergencydispatchservicesystem\MedicalEmergency.class
+com\mycompany\emergencydispatchservicesystem\AccidentEmergency.class
+com\mycompany\emergencydispatchservicesystem\EmergencyReport.class
+com\mycompany\emergencydispatchservicesystem\EmergencyDispatchServiceSystem.class

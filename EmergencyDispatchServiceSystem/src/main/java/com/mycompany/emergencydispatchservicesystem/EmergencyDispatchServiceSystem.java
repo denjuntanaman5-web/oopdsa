@@ -1,16 +1,49 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+    
 
 package com.mycompany.emergencydispatchservicesystem;
 
-/**
- *
- * @author nicym
- */
 public class EmergencyDispatchServiceSystem {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        EmergencyReport fire = new FireEmergency(
+                "INC-001",
+                "Juan Dela Cruz",
+                "09123456789",
+                "Lingion, Bukidnon",
+                "House fire"
+        );
+
+        EmergencyReport medical = new MedicalEmergency(
+                "INC-002",
+                "Maria Santos",
+                "09987654321",
+                "Manolo Fortich, Bukidnon",
+                "Patient needs medical assistance"
+        );
+
+        EmergencyReport accident = new AccidentEmergency(
+                "INC-003",
+                "Pedro Reyes",
+                "09112223344",
+                "Malaybalay, Bukidnon",
+                "Road accident"
+        );
+
+        // Update emergency statuses
+        fire.setStatus("Dispatched");
+        medical.setStatus("Responding");
+        accident.setStatus("Resolved");
+
+        // Display all reports
+        fire.displayReport();
+        System.out.println();
+
+        medical.displayReport();
+        System.out.println();
+
+        accident.displayReport();
     }
 }
+
+
